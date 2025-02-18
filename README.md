@@ -19,10 +19,6 @@ To add new test data do the following:
 5. Add a description of the new data to this README in the "Available data" section. Include the full URL to access the data (for example "https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/Visium-v2.0.0-Dataset/spatial.tar.gz")
 
 
-* Add new test data as attachments on release.
-* Update `scripts/prepare-test-data.sh` in TileDB-SOMA to download and extract new data.
-
-
 ## Access raw datasets
 
 ### General Access
