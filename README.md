@@ -3,7 +3,7 @@
 This project stores test and example data for TileDB-SOMA. Some examples of possible datasets that might be included are:
 
 * an AnnData H5AD file;
-* gene exression data and spatial folder from 10x's SpaceRanger (Visium processing software);
+* gene expression data and spatial folder from 10x's SpaceRanger (Visium processing software);
 * a set of multiscale images.
 
 
