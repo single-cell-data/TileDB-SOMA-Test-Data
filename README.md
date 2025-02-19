@@ -1,6 +1,11 @@
 # TileDB-SOMA-Test-Data
 
-This project stores test and example data for TileDB-SOMA. Test data is stored as
+This project stores test and example data for TileDB-SOMA. Some examples of possible datasets that might be included are:
+
+* an AnnData H5AD file;
+* gene exression data and spatial folder from 10x's SpaceRanger (Visium processing software);
+* a set of multiscale images.
+
 
 ## Available data
 
@@ -8,7 +13,7 @@ No data has been added.
 
 ## Add new raw datasets
 
-Raw datasets and large binaries should be added to this repository as releases. This is done because we do not need the version control functionality of git for the test data and GitHub has a larger file size limit on the releases then files in the repo.
+Raw datasets and large binaries should be added to this repository as releases. A release should include the input data you need to add a desired new test or example to TileDB-SOMA.
 
 To add new test data do the following:
 
@@ -18,6 +23,8 @@ To add new test data do the following:
 4. Publish the release.
 5. Add a description of the new data to this README in the "Available data" section. Include the full URL to access the data (for example "https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/Visium-v2.0.0-Dataset/spatial.tar.gz")
 
+
+Note: Data is being added to releases instead of directly to get because we do not need the version control functionality of git for the test data and GitHub has a larger file size limit on releases than files in the repo.
 
 ## Access raw datasets
 
