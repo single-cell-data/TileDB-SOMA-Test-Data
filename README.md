@@ -18,7 +18,7 @@ This repository exists to store large binaries and similar artifacts needed as t
 To add new test data do the following:
 
 1. Create a new release in the repository using the GitHub interface.
-2. Set the title to be "Dataset {major}.{minor}" (for example "Dataset 3.0"). Most datasets will only need a major version number, but if you need to upload a multi-part dataset use the minor version.
+2. Set the title to be "Dataset {major}.{minor}" (for example "Dataset 3.0"). Most datasets will only need a major version number, but if you need to upload a multi-part dataset use the minor version. When in doubt, update the major version.
 3. Set the tag to "dataset-{major}.{minor}" (for example "dataset-3.0").
 4. Add a description of what the data is. This may include information like where the data was originally hosted or how is was otherwise generated.
 5. Upload the desired datasets to the release by using the file dialog in the release page (at time of writing in Firefox this is done by clicking "Attach binaries by dropping them here or selecting them." in the new release page).
