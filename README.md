@@ -9,7 +9,10 @@ This project stores test and example data for the [TileDB-SOMA repository](https
 
 ## Available data
 
-* 2025-02-19: No data has been added to date.
+* Dataset 2025-02-19: Visium v2 Example
+  * [filtered_feature_bc_matrix.h5](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-19/filtered_feature_bc_matrix.h5)
+  * [raw_feature_bc_matrix.h5](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-19/raw_feature_bc_matrix.h5)
+  * [spatial.tar.gz](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-19/spatial.tar.gz)
 
 ## How to add new datasets
 
