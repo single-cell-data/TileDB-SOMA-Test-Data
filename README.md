@@ -18,7 +18,7 @@ This repository exists to store large binaries and similar artifacts needed as t
 To add new test data do the following:
 
 1. Create a new release in the repository using the GitHub interface.
-2. Set the title using the format "Dataset YYYY-MM-DD" (for example "Dataset 2025-02-19").
+2. Set the title using the format "Dataset YYYY-MM-DD" (for example "Dataset 2025-02-19"). Append the next letter of the alphabet starting with "b" if a release was already created on that day (for example "Dataset 2025-02-19b").
 3. Set the tag to "dataset-YYYY-MM-DD" (for example "dataset-2025-02-19").
 4. Add a description of what the data is. This may include information like where the data was originally hosted or how is was otherwise generated.
 5. Upload the desired datasets to the release by using the file dialog in the release page (at time of writing in Firefox this is done by clicking "Attach binaries by dropping them here or selecting them." in the new release page).
