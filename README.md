@@ -14,6 +14,11 @@ This project stores test and example data for the [TileDB-SOMA repository](https
   * [raw_feature_bc_matrix.h5](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-19/raw_feature_bc_matrix.h5)
   * [spatial.tar.gz](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-19/spatial.tar.gz)
 
+* Dataset 2025-02-21: Visium v1 Example
+  * [filtered_feature_bc_matrix.h5](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-21/filtered_feature_bc_matrix.h5)
+  * [raw_feature_bc_matrix.h5](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-21/raw_feature_bc_matrix.h5)
+  * [spatial.tar.gz](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-21/spatial.tar.gz)
+
 ## How to add new datasets
 
 This repository exists to store large binaries and similar artifacts needed as test or example inputs for TileDB-SOMA. The data will be added to this repository as a release.
