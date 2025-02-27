@@ -13,11 +13,13 @@ This project stores test and example data for the [TileDB-SOMA repository](https
   * [filtered_feature_bc_matrix.h5](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-19/filtered_feature_bc_matrix.h5)
   * [raw_feature_bc_matrix.h5](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-19/raw_feature_bc_matrix.h5)
   * [spatial.tar.gz](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-19/spatial.tar.gz)
+  * [filtered_visium2_loc.csv](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-19/filtered_visium2_loc.csv)
 
 * Dataset 2025-02-21: Visium v1 Example
   * [filtered_feature_bc_matrix.h5](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-21/filtered_feature_bc_matrix.h5)
   * [raw_feature_bc_matrix.h5](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-21/raw_feature_bc_matrix.h5)
   * [spatial.tar.gz](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-21/spatial.tar.gz)
+  * [filtered_visium1_loc.csv](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-21/filtered_visium1_loc.csv)
 
 ## How to add new datasets
 
