@@ -46,26 +46,31 @@ For each version:
 ```
 pip uninstall -y tiledbsoma
 pip install tiledbsoma==$version
+
 # For 1.7.3, 1.12, 1.14.5:
 pip install anndata==0.10.9
 # Otherwise:
 pip install anndata==0.11.3
+# See also: https://github.com/single-cell-data/TileDB-SOMA/pull/3919
 ```
 
 ```
-mkdir soma-experiment-versions
-mkdir soma-experiment-versions/$version
+YMD=$(date '+%Y-%m-%d')
+mkdir soma-experiment-versions-$YMD
+mkdir soma-experiment-versions-$YMD/$version
 ```
 
+where `$YMD` is, for example, `2025-04-04`.
+
 ```
-ingestor.py pbmc3k_unprocessed.h5ad soma-experiment-versions/$version/pbmc3k_unprocessed
-ingestor.py pbmc3k_processed.h5ad   soma-experiment-versions/$version/pbmc3k_processed
+ingestor.py pbmc3k_unprocessed.h5ad soma-experiment-versions-$YMD/$version/pbmc3k_unprocessed
+ingestor.py pbmc3k_processed.h5ad   soma-experiment-versions-$YMD/$version/pbmc3k_processed
 ```
 
 Once all versions are complete, expect output such as:
 
 ```
-ubuntu@geras[prod][][v]$ ls -l soma-experiment-versions/
+ubuntu@geras[prod][][v]$ ls -l soma-experiment-versions-$YMD/
 total 24
 drwxrwxr-x 4 ubuntu ubuntu 4096 Feb 24 17:11 1.12.3
 drwxrwxr-x 4 ubuntu ubuntu 4096 Feb 24 17:11 1.14.5
@@ -76,31 +81,31 @@ drwxrwxr-x 2 ubuntu ubuntu 4096 Feb 24 17:11 h5ad
 ```
 
 ```
-ubuntu@geras[prod][][v]$ ls -l soma-experiment-versions/*/
-soma-experiment-versions/1.12.3/:
+ubuntu@geras[prod][][v]$ ls -l soma-experiment-versions-$YMD/*/
+soma-experiment-versions-2025-04-04/1.12.3/:
 total 8
-drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_processed_1.12.3
-drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_unprocessed_1.12.3
+drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_processed
+drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_unprocessed
 
 soma-experiment-versions/1.14.5/:
 total 8
-drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_processed_1.14.5
-drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_unprocessed_1.14.5
+drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_processed
+drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_unprocessed
 
 soma-experiment-versions/1.15.0/:
 total 8
-drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_processed_1.15.0
-drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_unprocessed_1.15.0
+drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_processed
+drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_unprocessed
 
 soma-experiment-versions/1.15.7/:
 total 8
-drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_processed_1.15.7
-drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_unprocessed_1.15.7
+drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_processed
+drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_unprocessed
 
 soma-experiment-versions/1.7.3/:
 total 8
-drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_processed_1.7.3
-drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_unprocessed_1.7.3
+drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_processed
+drwxrwxr-x 6 ubuntu ubuntu 4096 Feb 24 17:13 pbmc3k_unprocessed
 
 soma-experiment-versions/h5ad/:
 total 66812
@@ -111,5 +116,5 @@ total 66812
 Then:
 
 ```
-tar zcf soma-experiment-versions.tgz soma-experiment-versions
+tar zcf soma-experiment-versions-$YMD.tgz soma-experiment-versions
 ```
