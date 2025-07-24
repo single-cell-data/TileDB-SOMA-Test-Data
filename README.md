@@ -21,6 +21,20 @@ This project stores test and example data for the [TileDB-SOMA repository](https
   * [spatial.tar.gz](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-21/spatial.tar.gz)
   * [filtered_visium1_loc.csv](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-02-21/filtered_visium1_loc.csv)
 
+* Dataset 2025-07-24: Simple python test datda
+  * [categorical_int_nan.h5ad](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-07-24/categorical_int_nan.h5ad)
+  * [pbmc-exp-without-shapes.tgz](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-07-24/pbmc-exp-without-shapes.tgz)
+  * [pbmc3k-with-obsm-zero.h5ad](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-07-24/pbmc3k-with-obsm-zero.h5ad)
+  * [pbmc3k.h5ad](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-07-24/pbmc3k.h5ad)
+  * [pbmc3k_processed.h5ad](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-07-24/pbmc3k_processed.h5ad)
+  * [subset-soma-01.h5ad](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-07-24/subset-soma-01.h5ad)
+  * [subset-soma-02.h5ad](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-07-24/subset-soma-02.h5ad)
+  * [subset-soma-03.h5ad](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-07-24/subset-soma-03.h5ad)
+  * [subset-soma-04.h5ad](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-07-24/subset-soma-04.h5ad)
+  * [x-empty.h5ad](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-07-24/x-empty.h5ad)
+  * [x-none.h5ad](https://github.com/single-cell-data/TileDB-SOMA-Test-Data/releases/download/dataset-2025-07-24/x-none.h5ad)
+
+
 ## How to add new datasets
 
 This repository exists to store large binaries and similar artifacts needed as test or example inputs for TileDB-SOMA. The data will be added to this repository as a release.
